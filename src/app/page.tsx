@@ -55,7 +55,7 @@ if (search) {
 
       <Hero />
 
-      <section className="bg-white rounded-t-[3rem] -mt-10 relative z-20 max-w-7xl mx-auto px-6 pt-24 pb-20 shadow-xl">
+      <section id="best-sellers" className="bg-white rounded-t-[3rem] -mt-10 relative z-20 max-w-7xl mx-auto px-6 pt-24 pb-20 shadow-xl">
 
         <h2 className="text-5xl font-bold text-center text-[#7a4b2a] mb-14">
           Best Sellers
