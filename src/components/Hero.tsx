@@ -1,9 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Link } from "lucide-react";
 export default function Hero() {
   return (
     <section
+     id="best-sellers"
       className="relative min-h-[85vh] flex items-center overflow-hidden"
       style={{
         backgroundImage: "url('/products/hero.jpeg')",
@@ -36,13 +38,19 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-wrap gap-5">
-            <button className="bg-[#7a4b2a] text-white px-8 py-4 rounded-full hover:bg-[#5c4033] transition text-lg shadow-lg">
-              Shop Now
-            </button>
+            <a
+  href="#best-sellers"
+  className="bg-[#9b643d] text-white px-10 py-5 rounded-full text-xl hover:scale-105 transition duration-300 shadow-xl"
+>
+  Shop Now
+</a>
 
-            <button className="border border-white/40 text-white px-8 py-4 rounded-full hover:bg-white/10 transition text-lg backdrop-blur-sm">
-              Explore Collection
-            </button>
+           <Link
+  href="/products"
+  className="border border-white/40 backdrop-blur-xl text-white px-10 py-5 rounded-full text-xl hover:bg-white/10 transition duration-300"
+>
+  Explore Collection
+</Link>
           </div>
         </div>
       </motion.div>
